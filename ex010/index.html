@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamicas e audio</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>criando imagens em diferentes sites</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/fotoP.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/fotoM.png" type="image/png">
+        <img src="imagens/fotoG.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <audio preload="auto" autoplay controls>
+        <source src="midia/Jumpin June - The Soundlings.mp3" type="audio/mp3">
+        <source src="midia/Jumpin June - The Soundlings.mp3" type="audio/wav">
+        <source src="midia/Jumpin June - The Soundlings.mp3" type="audio/ogg">
+        <p>seu navegador não reproduz audio <a href="midia/Jumpin June - The Soundlings.mp3">Baixe o audio aqui </a>
+        </p>
+    </audio>
+    
+</body>
+</html>
